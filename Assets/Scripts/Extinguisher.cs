@@ -32,12 +32,12 @@ internal class Extinguisher : MonoBehaviour
                         }
                     }
                 }
-                if (timeInFireSight == 300)
+                if (timeInFireSight == 200)
                 {
                     Destroy(fire.gameObject);
                     SceneManager.LoadScene("EndScreen");
                     Debug.Log("loaded scenes");
-                    GameManager.audioSource.Stop();
+                    GameManager.AudioSource.Stop();
                     Cursor.lockState = CursorLockMode.None;
                 }
                 Debug.Log(timeInFireSight);

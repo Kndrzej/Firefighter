@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     float zAxis;
     Vector3 move;
     Vector3 velocity;
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;

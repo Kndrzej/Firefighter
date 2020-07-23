@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -11,8 +9,8 @@ public class EndScreenManager : MonoBehaviour
 
     private void Awake()
     {
-        nickname.text = MainMenu.playerName;
-        time.text = GameManager.timeFromStart.ToString();
+        nickname.text = MainMenu.PlayerName;
+        time.text = GameManager.TimeFromStart.ToString();
         Cursor.visible = true;
     }
 

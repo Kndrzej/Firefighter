@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
@@ -8,7 +6,8 @@ public class MainMenu : MonoBehaviour
 {
     private InputField inputField;
     private Button startGame;
-    public static string playerName;
+    public static string PlayerName;
+
     private void Start()
     {
         DontDestroyOnLoad(this);
@@ -17,8 +16,8 @@ public class MainMenu : MonoBehaviour
     {
         inputField = GetComponentInChildren<InputField>();
         startGame = GetComponentInChildren<Button>();
-        playerName = inputField.text;
-        Debug.Log(playerName);
+        PlayerName = inputField.text;
+        Debug.Log(PlayerName);
         startGame.interactable = true;
     }
     public void OnClick()
